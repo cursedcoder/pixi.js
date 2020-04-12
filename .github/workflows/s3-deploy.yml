@@ -1,10 +1,6 @@
 name: Deploy to S3
 
-on:
-  push:
-    types: [ branches ]
-  release:
-    types: [ published ]
+on: [push, published]
 
 jobs:
   deploy:
