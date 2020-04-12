@@ -8,6 +8,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
+      - run: npm install
+      - run: npm run dist
+
       - uses: jakejarvis/s3-sync-action@master
         name: Deploy non-tag branches
         if: github.event_name == 'pull_request'

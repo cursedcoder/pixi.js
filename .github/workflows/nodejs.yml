@@ -21,4 +21,3 @@ jobs:
       with:
         run: npm run coverage:ci
     - run: codecov
-    - run: npm run dist
