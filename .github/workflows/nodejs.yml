@@ -26,6 +26,6 @@ jobs:
     - name: Run tests with xvfb
       uses: GabrielBB/xvfb-action@v1.0
       with:
-        run: node -v && npm run coverage:ci
+        run: npm run coverage:ci
     - run: codecov
     - run: npm run dist
